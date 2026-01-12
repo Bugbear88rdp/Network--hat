@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.chat'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JSON parsing
+    implementation 'com.google.code.gson:gson:2.8.9'
+    
+    // Logging
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:4.3.1'
+}
+
+tasks.named('test') {
+    useJUnit()
+}
+
+application {
+    mainClass = 'com.chat.Main'
+}
+
+// Task для запуска сервера
+task runServer(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.chat.server.ChatServer'
+    args = ['server']
+}
+
+// Task для запуска клиента
+task runClient(type: JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.chat.client.ChatClient'
+    args = ['client']
+    standardInput = System.in
+}

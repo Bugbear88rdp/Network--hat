@@ -1,0 +1,11 @@
+# Server settings
+server.port=9090
+server.host=0.0.0.0
+
+# Logging settings
+log.file=file.log
+log.directory=./logs
+
+# Client settings (для клиента)
+client.server.host=localhost
+client.server.port=9090

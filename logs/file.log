@@ -1,0 +1,10 @@
+[2026-01-12 02:16:56] [SYSTEM] SYSTEM: Server started on 0.0.0.0:9090
+[2026-01-12 02:18:11] [CONNECTED] user: User connected
+[2026-01-12 02:18:11] [CONNECTED] user: User connected
+[2026-01-12 02:18:11] [2026-01-12 02:18:11] [CONNECT] user: User has connected
+[2026-01-12 02:18:38] [DISCONNECTED] user: User disconnected
+[2026-01-12 02:18:38] [SYSTEM] SYSTEM: Client disconnected
+[2026-01-12 02:18:38] [SYSTEM] SYSTEM: Server shutting down
+[2026-01-12 02:18:38] [SYSTEM] SYSTEM: Server shutting down
+[2026-01-12 02:18:38] [SYSTEM] SYSTEM: Server stopped
+[2026-01-12 02:18:38] [SYSTEM] SYSTEM: Server stopped
